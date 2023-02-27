@@ -1,4 +1,32 @@
-\providecommand{\tightlist}{%
+%!TEX TS-program = xelatex
+\documentclass[11pt]{article}
+
+\usepackage[english]{babel}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{stix2}
+\usepackage[scaled]{helvet}
+\usepackage[scaled]{inconsolata}
+
+\usepackage{lastpage}
+
+\usepackage{gensymb}
+
+\usepackage{setspace}
+
+\usepackage{ccicons}
+
+\usepackage[hang,flushmargin]{footmisc}
+
+\usepackage{geometry}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}\providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 \makeatletter
@@ -109,4 +137,144 @@ urlcolor=blue}
 \newcommand{\CSLBlock}[1]{#1\hfill\break}
 \newcommand{\CSLLeftMargin}[1]{\parbox[t]{\maxof{\widthof{#1}}{\csllabelwidth}}{#1}}
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth}{#1}}
-\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}\geometry{verbose,letterpaper,tmargin=2.2cm,bmargin=2.2cm,lmargin=2.2cm,rmargin=2.2cm}
+
+\usepackage{lineno}
+\usepackage[nolists,noheads]{endfloat}
+
+\pagestyle{plain}
+
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\doublespacing
+
+\fancypagestyle{normal}
+{
+  \fancyhf{}
+  \fancyfoot[R]{\footnotesize\sffamily\thepage\ of \pageref*{LastPage}}
+}
+\begin{document}
+\raggedright
+\thispagestyle{empty}
+{\Large\bfseries\sffamily Surprising Species: the trace of evolution in
+food webs through the lenses of information theory}
+\vskip 5em
+
+%
+\href{https://orcid.org/0000-0002-0735-5184}{Giulio Valentino\,Dalla
+Riva}%
+%
+\,\textsuperscript{1,2,‡}\quad %
+Daniele\,Catanzaro%
+%
+\,\textsuperscript{3,4}
+
+\textsuperscript{1}\,University of
+Canterbury\quad \textsuperscript{2}\,School of Mathematics and
+Statistics\quad \textsuperscript{3}\,Inn of the Prancing
+Pony\quad \textsuperscript{4}\,Fellowship of the Ring
+
+\textsuperscript{‡}\,Equal contributions\\
+
+\textbf{Correspondance to:}\\
+Giulio Valentino Dalla
+Riva --- \texttt{giulio.dallariva@canterbury.ac.nz}\\
+
+\vfill
+
+Detecting and analysing the role of macro-evolutionary processes in the
+structure of ecological networks is challenging, particularly for
+unipartite food webs. Current methods are either model-based, or relying
+on linear interactions, and provide limited information on the role of
+single species. Here, we propose a novel approach, building on
+Information Theory and providing a meaningful interpretation in terms of
+Minimal Evolution, to test for phylogenetic signal in unipartite food
+webs. Moreover, we show how that can be used to identify surprising
+species: species that have an unexpected peculiar ecological role, given
+their evolutionary history. We apply our methodology to two large food
+webs, and discuss the results.
+
+
+
+
+\vfill
+This work is released by its authors under a CC-BY 4.0 license\hfill\ccby\\
+Last revision: \emph{\today}
+
+\clearpage
+\thispagestyle{empty}
+
+\vfill
+
+\vfill
+
+\clearpage
+\linenumbers
+\pagestyle{normal}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+Phylogenetic Signal testing for ecological network is important, but is
+hard.
+
+Current methods work mostly for bipartite, or are model based.
+
+We don't have a model for unipartite food webs.
+
+So, here we propose a method based on Information Theory.
+
+Dkl. Minimal Evolution. Interpretation as surprise.
+
+Surprising species.
+
+\hypertarget{methods}{%
+\section{Methods}\label{methods}}
+
+From phylogeny to distance matrix to distribution.
+
+From ecological networks to distance matrix (through RDPG) to
+distribution.
+
+Compute Dkl of the two distributions.
+
+Permanova by reshuffling tips on tree.
+
+Decomposition on species level.
+
+Figure 1: diagram of method.
+
+\hypertarget{data}{%
+\section{Data}\label{data}}
+
+Tanzania National Park
+
+Marine food webs
+
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+Tanzania National Park
+
+Tanzania Surprising Species
+
+Figure 2: permanova test \textbar\textbar{} suprise of species
+\textbar\textbar{} inlet of most suprising species.
+
+Marine food webs
+
+Marine surp spec
+
+Figure 3: permanova test \textbar\textbar{} suprise of species
+\textbar\textbar{} inlet of most suprising species
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\end{document}

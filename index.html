@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Surprising Species: the trace of evolution in food webs
+through the lenses of information theory</title>
+    <script src="https://hypothes.is/embed.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+        :root {
+            --citation: #1976D2;
+            --structure: hsl(210, 61%, 43%);
+
+            --light: #474747;
+            --pale: #a5a5a5;
+            --grey: #e0e0e0;
+            --nav: #fdfdfd;
+
+            --width: 820px;
+            --inner-space: 1.2em;
+        }
+
+        body {
+            font-family: "Roboto", sans-serif;
+            margin: 0 0;
+            padding: 0 0;
+        }
+
+        article>p {
+            line-height: 135%;
+        }
+
+        article>h1 {
+            padding-top: 3em;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            border-bottom: 1px solid var(--structure);
+        }
+
+        a:hover {
+            font-weight: 500;
+        }
+
+        .citation {
+            color: var(--citation);
+        }
+
+        .container {
+            margin: 0em auto;
+            max-width: var(--width);
+            padding: var(--inner-space);
+        }
+
+        header>.container {
+            margin-top: 4em;
+        }
+
+        code,
+        pre {
+            font-family: "Roboto Mono", monospace;
+        }
+
+        pre {
+            white-space: pre-wrap;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: var(--structure);
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: 400;
+        }
+
+        header {
+            font-family: "Roboto Condensed", sans-serif;
+            z-index: 5;
+            color: black;
+            margin-top: 4rem;
+        }
+
+        .header--title {
+            font-weight: 400;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .header--authors>span {
+            color: var(--light);
+            font-weight: 400;
+        }
+
+        main {
+            padding-top: 8em !important;
+            padding-bottom: 8em !important;
+        }
+
+        footer {
+            background-color: var(--grey);
+            font-weight: 300;
+        }
+
+        .abstract {
+            color: var(--light);
+            margin-bottom: 5em;
+        }
+
+        figure {
+            max-width: 100%;
+            border: 1px solid var(--pale);
+            border-radius: 2px;
+            margin: 1em 0.5em;
+        }
+
+        figure>img {
+            max-width: 100%;
+            display: block;
+            margin: 0em auto;
+        }
+
+        figure>figcaption {
+            padding: var(--inner-space);
+        }
+
+        table {
+            width: 100%;
+            min-width: 100%;
+            border-collapse: collapse;
+        }
+
+        table>caption {
+            padding: var(--inner-space);
+        }
+
+        figcaption,
+        caption {
+            color: var(--light);
+            font-weight: 300;
+        }
+
+        thead {
+            color: var(--structure);
+        }
+
+        td,
+        th {
+            padding: 3px;
+        }
+
+        tr {
+            border-top: 1px solid var(--structure);
+            border-bottom: 1px solid var(--structure);
+        }
+
+        tbody>tr:nth-child(even) {
+            background: var(--grey)
+        }
+
+        ;
+
+        tbody {
+            border-bottom: 1px solid var(--structure);
+        }
+
+        #refs {
+            font-size: 90%;
+            column-count: 2;
+        }
+
+        #refs>.csl-entry {
+            padding-bottom: 0.2em;
+            padding-top: 0.2em;
+        }
+
+        .hanging-indent>.csl-entry {
+            padding-left: 15px;
+            text-indent: -15px;
+        }
+
+        .artifacts {
+            text-align: center;
+            border-radius: 4px;
+            background-color: var(--grey);
+            padding: 1em;
+            margin-top: 4em;
+        }
+
+        .artifacts a{
+            background-color: var(--structure);
+            text-decoration: none;
+            margin: 0px 2em;
+            color: white;
+            text-transform: capitalize;
+            border-radius: 4px;
+            text-align: center;
+            padding: 4px 4px;
+            width: 7em;
+            display: inline-block;
+        }    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css"
+    integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv" crossorigin="anonymous" />
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js"
+    integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O"
+    crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js"
+    integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF"
+    crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            renderMathInElement(document.body, {
+                delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false }
+                ]
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header--title">Surprising Species: the trace of
+evolution in food webs through the lenses of information theory</div>
+            <div class="header--authors">
+                <span class="header--author">
+                <a href="https://orcid.org/0000-0002-0735-5184" target="_blank">
+                    Giulio Valentino Dalla Riva
+                </a>
+                <sup class="affiliation">1,2,‡</sup>
+                </span><span class="header--author">
+                Daniele Catanzaro
+                <sup class="affiliation">3,4</sup>
+                </span>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="abstract">
+            Detecting and analysing the role of macro-evolutionary
+            processes in the structure of ecological networks is
+            challenging, particularly for unipartite food webs. Current
+            methods are either model-based, or relying on linear
+            interactions, and provide limited information on the role of
+            single species. Here, we propose a novel approach, building
+            on Information Theory and providing a meaningful
+            interpretation in terms of Minimal Evolution, to test for
+            phylogenetic signal in unipartite food webs. Moreover, we
+            show how that can be used to identify surprising species:
+            species that have an unexpected peculiar ecological role,
+            given their evolutionary history. We apply our methodology
+            to two large food webs, and discuss the results.
+
+
+            <div class="artifacts">
+                <a href="DallaRiva_and_Catanzaro_2023_surprising_species_draft.pdf" title="Draft PDF" target="_blank">Draft</a>
+                <a href="DallaRiva_and_Catanzaro_2023_surprising_species_preprint.pdf" title="Preprint PDF" target="_blank">Preprint</a>
+                <a href="DallaRiva_and_Catanzaro_2023_surprising_species.odt" title="OpenDocument (Word)" target="_blank">Libre Office</a>
+            </div>
+        </section>
+        
+        <article>
+            <h1 id="introduction">Introduction</h1>
+            <p>Phylogenetic Signal testing for ecological network is
+            important, but is hard.</p>
+            <p>Current methods work mostly for bipartite, or are model
+            based.</p>
+            <p>We don’t have a model for unipartite food webs.</p>
+            <p>So, here we propose a method based on Information
+            Theory.</p>
+            <p>Dkl. Minimal Evolution. Interpretation as surprise.</p>
+            <p>Surprising species.</p>
+            <h1 id="methods">Methods</h1>
+            <p>From phylogeny to distance matrix to distribution.</p>
+            <p>From ecological networks to distance matrix (through
+            RDPG) to distribution.</p>
+            <p>Compute Dkl of the two distributions.</p>
+            <p>Permanova by reshuffling tips on tree.</p>
+            <p>Decomposition on species level.</p>
+            <p>Figure 1: diagram of method.</p>
+            <h1 id="data">Data</h1>
+            <p>Tanzania National Park</p>
+            <p>Marine food webs</p>
+            <h1 id="results">Results</h1>
+            <p>Tanzania National Park</p>
+            <p>Tanzania Surprising Species</p>
+            <p>Figure 2: permanova test || suprise of species || inlet
+            of most suprising species.</p>
+            <p>Marine food webs</p>
+            <p>Marine surp spec</p>
+            <p>Figure 3: permanova test || suprise of species || inlet
+            of most suprising species</p>
+            <h1 id="conclusion">Conclusion</h1>
+            <h1 id="references">References</h1>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h2>Affiliations</h2> 
+            <sup>1</sup>&nbsp;University of
+            Canterbury; <sup>2</sup>&nbsp;School of Mathematics and
+            Statistics; <sup>3</sup>&nbsp;Inn of the Prancing
+            Pony; <sup>4</sup>&nbsp;Fellowship of the Ring
+            <br />
+            
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -24,6 +24,8 @@ Permanova by reshuffling tips on tree.
 
 Decomposition on species level.
 
+Figure 1: diagram of method.
+
 # Data
 
 Tanzania National Park
@@ -36,9 +38,13 @@ Tanzania National Park
 
 Tanzania Surprising Species
 
+Figure 2: permanova test || suprise of species || inlet of most suprising species.
+
 Marine food webs 
 
 Marine surp spec
+
+Figure 3: permanova test || suprise of species || inlet of most suprising species
 
 # Conclusion
 
